@@ -1,0 +1,20 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+
+.cursor-tracker {
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;;
+    mix-blend-mode:difference;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    transition: all 0.1s;
+    z-index: 100;
+}
